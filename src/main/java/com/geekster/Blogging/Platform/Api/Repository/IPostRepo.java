@@ -2,6 +2,7 @@ package com.geekster.Blogging.Platform.Api.Repository;
 
 import com.geekster.Blogging.Platform.Api.model.Post;
 import com.geekster.Blogging.Platform.Api.model.User;
+import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
@@ -10,7 +11,7 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface IPostRepo extends CrudRepository<Post,Long> {
+public interface IPostRepo extends JpaRepository<Post,Long> {
     List<Post> findByUser(User user);
 
     @Modifying
