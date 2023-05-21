@@ -124,7 +124,4 @@ The project is a basic web application built using Java and the Spring framework
     
 ---
 
-## Deployment
-
-The application has been deployed on an AWS EC2 instance, and can be accessed using the following URL: http://13.233.203.246:8080/swagger-ui/index.html#/
 
